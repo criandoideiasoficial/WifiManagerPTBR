@@ -179,25 +179,25 @@ const char HTTP_JS[] PROGMEM =
 #ifdef ESP32
 	const char HTTP_INFO_esphead[]    PROGMEM = "<h3>esp32</h3><hr><dl>";
 	const char HTTP_INFO_chiprev[]    PROGMEM = "<dt>Chip rev</dt><dd>{1}</dd>";
-  	const char HTTP_INFO_lastreset[]  PROGMEM = "<dt>Last reset reason</dt><dd>CPU0: {1}<br/>CPU1: {2}</dd>";
-  	const char HTTP_INFO_aphost[]     PROGMEM = "<dt>Access point hostname</dt><dd>{1}</dd>";
-    const char HTTP_INFO_psrsize[]    PROGMEM = "<dt>PSRAM Size</dt><dd>{1} bytes</dd>";
-	const char HTTP_INFO_temp[]       PROGMEM = "<dt>Temperature</dt><dd>{1} C&deg; / {2} F&deg;</dd>";
+  	const char HTTP_INFO_lastreset[]  PROGMEM = "<dt>Motivo da última redefinição</dt><dd>CPU0: {1}<br/>CPU1: {2}</dd>";
+  	const char HTTP_INFO_aphost[]     PROGMEM = "<dt>Nome do host do ponto de acesso</dt><dd>{1}</dd>";
+    const char HTTP_INFO_psrsize[]    PROGMEM = "<dt>Tamanho PSRAM</dt><dd>{1} bytes</dd>";
+	const char HTTP_INFO_temp[]       PROGMEM = "<dt>Temperatura</dt><dd>{1} C&deg; / {2} F&deg;</dd>";
     const char HTTP_INFO_hall[]       PROGMEM = "<dt>Hall</dt><dd>{1}</dd>";
 #else
 	const char HTTP_INFO_esphead[]    PROGMEM = "<h3>esp8266</h3><hr><dl>";
-	const char HTTP_INFO_fchipid[]    PROGMEM = "<dt>Flash chip ID</dt><dd>{1}</dd>";
-	const char HTTP_INFO_corever[]    PROGMEM = "<dt>Core version</dt><dd>{1}</dd>";
-	const char HTTP_INFO_bootver[]    PROGMEM = "<dt>Boot version</dt><dd>{1}</dd>";
-	const char HTTP_INFO_lastreset[]  PROGMEM = "<dt>Last reset reason</dt><dd>{1}</dd>";
-	const char HTTP_INFO_flashsize[]  PROGMEM = "<dt>Real flash size</dt><dd>{1} bytes</dd>";
+	const char HTTP_INFO_fchipid[]    PROGMEM = "<dt>ID do chip flash</dt><dd>{1}</dd>";
+	const char HTTP_INFO_corever[]    PROGMEM = "<dt>Versão principal</dt><dd>{1}</dd>";
+	const char HTTP_INFO_bootver[]    PROGMEM = "<dt>Versão de inicialização</dt><dd>{1}</dd>";
+	const char HTTP_INFO_lastreset[]  PROGMEM = "<dt>Motivo da última redefinição</dt><dd>{1}</dd>";
+	const char HTTP_INFO_flashsize[]  PROGMEM = "<dt>Tamanho real do flash</dt><dd>{1} bytes</dd>";
 #endif
 
 const char HTTP_INFO_memsmeter[]  PROGMEM = "<br/><progress value='{1}' max='{2}'></progress></dd>";
-const char HTTP_INFO_memsketch[]  PROGMEM = "<dt>Memory - Sketch size</dt><dd>Used / Total bytes<br/>{1} / {2}";
-const char HTTP_INFO_freeheap[]   PROGMEM = "<dt>Memory - Free heap</dt><dd>{1} bytes available</dd>";
+const char HTTP_INFO_memsketch[]  PROGMEM = "<dt>Memória - Tamanho do esboço</dt><dd>Used / Total bytes<br/>{1} / {2}";
+const char HTTP_INFO_freeheap[]   PROGMEM = "<dt>Memória - heap livre</dt><dd>{1} bytes disponíveis</dd>";
 const char HTTP_INFO_wifihead[]   PROGMEM = "<br/><h3>WiFi</h3><hr>";
-const char HTTP_INFO_uptime[]     PROGMEM = "<dt>Uptime</dt><dd>{1} mins {2} secs</dd>";
+const char HTTP_INFO_uptime[]     PROGMEM = "<dt>Tempo de atividade</dt><dd>{1} mins {2} secs</dd>";
 const char HTTP_INFO_chipid[]     PROGMEM = "<dt>Chip ID</dt><dd>{1}</dd>";
 const char HTTP_INFO_idesize[]    PROGMEM = "<dt>Flash size</dt><dd>{1} bytes</dd>";
 const char HTTP_INFO_sdkver[]     PROGMEM = "<dt>SDK version</dt><dd>{1}</dd>";
